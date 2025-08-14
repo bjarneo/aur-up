@@ -7,7 +7,6 @@ import (
 	"net/http"
 	"os"
 	"os/exec"
-	"runtime"
 	"time"
 
 	"github.com/pterm/pterm"

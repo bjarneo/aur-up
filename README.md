@@ -4,11 +4,29 @@ This is a simple Go application that continuously checks the status of the Arch 
 
 ![AUR Status Checker](./cli.png)
 
-## Prerequisites
+## Downloading the Pre-built Binary
+
+You can download the latest pre-built binary for Linux from the GitHub Releases page.
+
+1.  Go to the [latest release page](https://github.com/bjarneo/aur-up/releases/latest).
+2.  Download the `aur-up` binary.
+3.  (Optional) Download the `aur-up.sha256` file to verify the integrity of the binary.
+4.  Make the binary executable:
+    ```bash
+    chmod +x aur-up
+    ```
+5.  (Optional) Move the binary to a directory in your `PATH`:
+    ```bash
+    sudo mv aur-up /usr/local/bin/
+    ```
+
+## Building from Source
+
+### Prerequisites
 
 - Go programming language installed on your system.
 
-## Installation and Usage
+### Instructions
 
 1.  **Clone the repository or download the source code.**
 
@@ -30,22 +48,10 @@ This is a simple Go application that continuously checks the status of the Arch 
     go run main.go
     ```
 
-## Building the application
+5.  **Build the application:**
 
-To build the application into a single executable, run the following command:
+    To build the application into a single executable, run the following command:
 
-```bash
-go build -o aur-up main.go
-```
-
-This will create an executable file named `aur-up` in the current directory.
-
-## Installing to /usr/local/bin
-
-After building the application, you can move it to `/usr/local/bin` to make it available system-wide:
-
-```bash
-sudo mv aur-up /usr/local/bin/
-```
-
-You can then run the application from anywhere by simply typing `aur-up` in your terminal.
+    ```bash
+    go build -o aur-up main.go
+    ```
